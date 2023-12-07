@@ -1,6 +1,4 @@
-from riot import Venv
-from riot import latest
-
+from riot import Venv, latest
 
 SUPPORTED_PYTHON_VERSIONS = ["2.7", "3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11"]
 
@@ -12,8 +10,6 @@ venv = Venv(
                 Venv(
                     pkgs={
                         "mypy": "==0.961",
-                        "sphinx": "==5.1.1",
-                        "alabaster": "==0.7.12",
                     },
                     pys=SUPPORTED_PYTHON_VERSIONS[2:],
                 ),
